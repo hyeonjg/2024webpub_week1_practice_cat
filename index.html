@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Poor+Story&display=swap" rel="stylesheet">
+
+		<title> 연습1-고먐미 </title>
+
+		<style>
+			html{font-family: "Poor Story"; font-weight: 400;}
+			header,section,footer{}
+
+			.bg-cat{
+				background: url('bg_cat.jpg');
+				background-position: 0px 0px;
+				background-attachment: fixed;
+			}
+
+			header{
+				margin: 0; padding-top: 70px;
+				height:300px; background:pink; text-align: center;
+			}
+			h1{
+				margin:0;
+				font-family: "Bagel Fat One"; font-size: 8rem; color: pink;
+			}
+			h2{
+				margin-top: 30px; margin-bottom: 30px;
+				flex-basis: 100%;
+				font-family: "Poor Story"; color: #F1F0F0;
+				font-size: 3rem;
+			}
+
+			p{
+				margin:auto;
+				margin-bottom: 30px;
+				width: 450px;
+				font-size: 1.3em; line-height: 1.5;
+				text-align: left;
+				word-break: keep-all; display: inline;
+				background-color: #F1F0F0;
+			}
+
+			body{margin:0;text-align: center;}
+			section{
+				width: 100% padding: 10px;
+				margin: auto;
+				background-color: pink;
+				display: flex;}
+
+			.row{margin: 10px; flex-basis: 100%;}
+			.col-3{display: inline-block;}
+			a{
+				width:200px; height:100px;
+				font-family: "Bagel Fat One"; font-size: 2em; color: pink; text-align:center;
+				text-decoration: none;
+				background-color: #F1F0F0;
+				padding:30px; line-height: 100px; margin: 10px; margin-bottom: 30px;
+				display:inline-block;
+				border-radius: 30px; border: 3px solid pink;
+				box-shadow: 0px 0px 5px hotpink;
+			}
+			a:hover{
+				color: pink; background: hotpink; box-shadow: none;
+				transition: all 0.3s;
+			}
+			.full{margin:auto;}
+
+			footer{text-align: center; height: 100px; background-color: pink;}
+		</style>
+	</head>
+
+	<!--이것은 주석입니다-->
+
+	<body>
+		<header class='bg-cat'>
+			<div class='row'>
+				<h1>저는 네모네모 고양이가 좋습니다.</h1>
+			</div>
+		</header>
+
+		<section>
+			<div class='row'>
+				<h2>받아라! 네모네모 빔~</h2>
+			</div>
+		</section>
+
+		<section>
+			<p>네모네모 고양이란? 사각형의 상자나 물건, 집 안에 들어가서 사각형이 된 고양이를 말한다. 고양이가 사각형이 될 수 있는 이유는 고양이는 유연하고 말랑하기 때문이다.</p>
+		</section>
+
+		<section>
+			<div class='row'>
+				<div class='col-3'><a href="https://www.pinterest.co.kr/pin/659355201694373526/" target="_new">고먐미</a></div>
+				<div class='col-3'><a href="https://www.pinterest.co.kr/pin/659566307924237308/" target="_new">고먐미</a></div>
+				<div class='col-3'><a href="https://www.pinterest.co.kr/pin/252623860336189205/" target="_new">고먐미</a></div>
+			</div>
+		</section>
+
+		<section>
+			<iframe class='full' width="560" height="315" src="https://www.youtube.com/embed/Dv8w9BuVLhA?si=xILUwv1C9hr0Nnvp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</section>
+
+	</body>
+
+	<footer>
+		구현정이 만든 연습용 웹사이트입니다.
+	</footer>
+
+</html>
