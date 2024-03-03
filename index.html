@@ -10,8 +10,12 @@
 		<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Poor+Story&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Poor+Story&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Noto+Sans+KR:wght@100..900&family=Poor+Story&display=swap" rel="stylesheet">
 
 		<title> 연습1-고먐미 </title>
 
@@ -24,12 +28,38 @@
 				background-position: 0px 0px;
 				background-attachment: fixed;
 			}
-			em{font-style: normal; border-bottom: 3px solid black;}
+			.bg-black{background-color: black;}
+			em{font-style: normal; border-bottom: 2px solid black;}
+			.row{margin: 10px; flex-basis: 100%;}
+			.col-3{display: inline-block;}
+			.full{margin:auto;}
 
 			header{
 				margin: 0; padding-top: 70px;
-				height:300px; background:pink; text-align: center;
+				height:200px; background:pink; text-align: center;
 			}
+
+			nav ol{
+				margin: auto; padding: 0px;
+				width: 450px; height: 40px;
+				background-color: white;
+			}
+			nav ol li{
+				margin: 0px;
+				width: 150px; height:40px;
+				text-align: center; line-height: 40px;
+				color: pink; background-color: black;
+				list-style-type:none;
+				float: left;
+			}
+			nav ol li a{
+				text-decoration: none;
+				color: pink;
+			}
+			nav ol li a:hover{
+				color: hotpink;
+			}
+
 			h1{
 				margin:0;
 				font-family: "Bagel Fat One"; font-size: 6rem; color: pink;
@@ -44,11 +74,11 @@
 			p{
 				margin:auto;
 				margin-bottom: 30px;
-				width: 450px;
-				font-size: 1.3em; line-height: 1.5;
+				width: 500px;
+				font-family: "Noto Sans Korean"; font-size: 1.3em; line-height: 1.7; font-weight: 200;
 				text-align: left;
 				word-break: keep-all; display: inline;
-				background-color: #F1F0F0;
+				background-color: none;
 			}
 
 			body{margin:0;text-align: center;}
@@ -58,9 +88,7 @@
 				background-color: pink;
 				display: flex;}
 
-			.row{margin: 10px; flex-basis: 100%;}
-			.col-3{display: inline-block;}
-			a{
+			.cat_pic div a{
 				width:200px; height:100px;
 				font-family: "Bagel Fat One"; font-size: 2em; color: pink; text-align:center;
 				text-decoration: none;
@@ -70,11 +98,10 @@
 				border-radius: 30px; border: 3px solid pink;
 				box-shadow: 0px 0px 5px hotpink;
 			}
-			a:hover{
+			.cat_pic div a:hover{
 				color: pink; background: hotpink; box-shadow: none;
 				transition: all 0.3s;
 			}
-			.full{margin:auto;}
 
 			footer{text-align: center; height: 100px; background-color: pink;}
 		</style>
@@ -89,7 +116,22 @@
 			</div>
 		</header>
 
-		<section>
+		<nav class='bg-black'>
+			<ol>
+				<li>
+					<a href='#a'>네모네모 고양이란?</a>
+				</li>
+				<li>
+					<a href='#b'>사진 보러가기</a>
+				</li>
+				<li>
+					<a href='#c'>배경음악</a>
+				</li>
+			</ol>
+		</nav>
+		<!--ol: ordered list ul: unordered list-->
+
+		<section id='a'>
 			<div class='row'>
 				<h2>받아라! 네모네모 빔~</h2>
 			</div>
@@ -101,13 +143,23 @@
 
 		<section>
 			<div class='row'>
+				<h2>인간의 친구 고양이</h2>
+			</div>
+		</section>
+
+		<section>
+			<p>고양이는 인류로부터 오랫동안 애완동물로 사랑받아 왔다. 하지만 실제로 고대 이집트의 벽화에는 고양이를 새 사냥에 이용하는 그림이 있다. 고양이와 인간의 공생관계는 농경의 발달로 이집트 문명이 발생했을 무렵 곡식을 저장하는 창고에 모여든 쥐를 잡으러 따라간 것이 시작으로 알려져 있다. 때문에 고양이는 길들여진 동물인 가축의 특성을 전혀 지니고 있지 않으며, 가축이라기보다는 인간과 공생관계라고 보는 것이 맞다. 이 후 아라비아 상인들의 실크로드를 통해 유럽과 아시아 전역으로 퍼져나갔으며, 항해를 하는 데에도 도움이 되어 인간과 함께 항해를 동행하면서 전 세계로 퍼져나갔다. 중국의 십이지에는 포함되어 있지 않지만 베트남과 네팔에서는 토끼 대신 고양이가 십이지 중 하나다.</p>
+		</section>
+
+		<section class='cat_pic' id='b'>
+			<div class='row'>
 				<div class='col-3'><a href="https://www.pinterest.co.kr/pin/659355201694373526/" target="_new">고먐미</a></div>
 				<div class='col-3'><a href="https://www.pinterest.co.kr/pin/659566307924237308/" target="_new">고먐미</a></div>
 				<div class='col-3'><a href="https://www.pinterest.co.kr/pin/252623860336189205/" target="_new">고먐미</a></div>
 			</div>
 		</section>
 
-		<section>
+		<section id='c'>
 			<iframe class='full' width="560" height="315" src="https://www.youtube.com/embed/Dv8w9BuVLhA?si=xILUwv1C9hr0Nnvp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		</section>
 
